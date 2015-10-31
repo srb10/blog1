@@ -1,0 +1,29 @@
+<template name="mainNav">
+    <nav class="navbar navbar-inverse " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">Navigation layout</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">publicView template</a>
+                    </li>
+                    <li>
+                        <a href="/adminViewAllPosts">adminViewAllPosts template</a>
+                    </li>
+                </ul>
+                <ul><li>{{>loginButtons}}</li></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {{> yield }}   <!--This will be the place where our application will render
+        the page ( The yield directive can be named
+        and the multiple render space can be present in the page
+        Apparently if you have more than one yield, you need to name them-->
+    </div>
+</template>

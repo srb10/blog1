@@ -1,0 +1,39 @@
+<template name="adminViewAllPosts">
+
+    {{#if currentUser}}
+        {{> ifUser }}
+    {{else}}
+        <h1>...You better git logged in if you want to see this here content</h1>
+    {{/if}}
+
+    <hr>
+    {{#if currentUser}}
+        You are logged in, currentUser.
+        <div class="row-fluid>"><div class="col-md-6">I am where a block of blog posts might be</div></div>
+    {{/if}}
+
+    <hr>
+    other content
+</template>
+
+
+
+<template name="ifUser">
+    <h1>This is the adminViewAllPosts page</h1>  <hr>
+    Content here
+    {{>createPost2}}
+
+    <hr>
+</template>
+
+
+
+<template name="publicView">
+    <h1>This is the publicView </h1>
+    <!--
+        <a href="/adminViewAllPosts" >adminViewAllPosts</a>
+    -->
+    <hr>
+    <h2>nothing to see here</h2>
+</template>
+
