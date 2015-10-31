@@ -1,0 +1,17 @@
+
+
+1)git code for writing to db into a template
+    html form template
+    .js template helper with Mongo write code
+2)add that template reference to the loogged in view
+3)check Mongo in console to verify write.
+
+4)get code for reading db into a template
+5)add that template reference to the home page
+6}male it work
+
+add  Autorun and publish & subscribe
+    -see if you can use bootstrap for controls
+
+
+
