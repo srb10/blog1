@@ -5,12 +5,11 @@
             <div class="{{#if checked}}strikethrough{{/if}}"  style="background-color: chocolate">
 
                 <form class="new-resolution">
-                    <label>Form1
-                <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+                    <label for="checkbox1">Checkbox:</label>
+                <input  id="checkbox1" type="checkbox" checked="{{checked}}" class="toggle-checked">
                 <!--                <span class="{{#if checked}}strikethrough{{/if}}">{{title}}</span></div><div class="footer">-->
                 <span class="text">{{title}}</span>
                 <code class="text">{{>body1}}</code>
-                    </label>
                     </form>
             </div>
             <div class="row">
